@@ -41,8 +41,6 @@ function draw()
 
   // Draw triangles
 
-  console.log("New draw");
-
   var toDraw = [ shapes ];
   while (toDraw.length != 0)
   {
@@ -50,8 +48,6 @@ function draw()
 
     if (item.shapes)
     {
-      console.log("Found a shape");
-
       for (j = 0; j < item.shapes.length; j++)
       {
         toDraw.push(item.shapes[j]);
@@ -60,9 +56,6 @@ function draw()
 
     if (item.points)
     {
-      console.log("Found points");
-      console.log("Found: " + item.points[0].x + "/" + item.points[0].y + " " + item.points[1].x + "/" + item.points[1].y + " " + item.points[2].x + "/" + item.points[2].y); 
-
       context.beginPath();
       context.moveTo(item.points[0].x, item.points[0].y);
       for (j = 1; j < item.points.length; j++) context.lineTo(item.points[j].x, item.points[j].y);
