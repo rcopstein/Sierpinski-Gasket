@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>The Sierpinski Gasket</title>
+    <link rel="stylesheet" href="Styles/style.css" />
+
+  </head>
+
+  <body>
+
+    <!-- Top Action Bar -->
+
+    <div class="header">
+
+      <div class="wrapper float-container">
+
+        <div class="half left">
+
+          <div class="button">
+
+              <a href="http://rcopstein.github.io">
+              
+                <i>home</i>
+              
+              </a>
+            
+            </div>
+
+        </div>
+
+        <div class="half right">
+
+          <div class="button" id="MinusButton">
+            
+            <i>keyboard_arrow_left</i>
+            
+          </div>
+
+          <div class="label" id="LevelLabel">
+
+            3
+
+          </div>
+
+          <div class="button" id="PlusButton">
+            
+            <i>keyboard_arrow_right</i>
+            
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="wrapper">
+
+      <!-- Title -->
+
+      <h1>Sierpinski Gasket</h1>
+
+      <!-- Canvas -->
+
+      <canvas id='MainCanvas'>
+        Your browser does not support the canvas element...
+      </canvas>
+
+      <!-- About & Instructions -->
+
+      <div class="float-container">
+
+        <div class="half left">
+
+          <h2>About</h2>
+
+          <p>This app provides a graphical representation of the <b>Sierpinski Gasket</b> generated using a recursive approach</p>
+
+        </div>
+
+        <div class="half right">
+
+          <h2>Instructions</h2>
+
+          <p>Use the buttons on the top to choose a level from 0 to 10. For each level a new step will be drawn in the gasket</p>
+
+        </div>
+
+      </div>
+
+      <!-- Footer -->
+
+      <footer>
+
+        Created by Rafael Copstein in 2016
+
+      </footer>
+
+    </div>
+
+    <script src="Scripts/script.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,163 @@
+/* Load custom font */
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../Fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Material Icons";
+    src: url(../Fonts/Material_Icons/MaterialIcons-Regular.ttf);
+}
+
+/* Structure */
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+    background: #2e3d49;
+    color: #e2e1e0;;
+}
+
+.header {
+    background: #1c262f;
+    min-height: 50px;
+}
+
+.header .button {
+  line-height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  color: #02b3e4;
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+.header .button:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header .button:active {
+    color: #FFF;
+    background: #02b3e4;
+    border-bottom: 3px solid #02b3e4;
+}
+
+.header .button a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header .label {
+    font-size: 24px;
+    font-family: "Open Sans";
+
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    color: #02b3e4;
+    box-sizing: border-box;
+    display: inline-block;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 950px;
+
+    font-family: "Open Sans", "Helvetica", sans-serif;
+}
+
+.half {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+/* Positioning */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.header .left {
+  text-align: left;
+}
+
+.header .right {
+  text-align: right;
+}
+
+.clear {
+    float: none;
+    clear: both;
+}
+
+.float-container {
+    overflow: auto;
+}
+
+/* Style */
+
+h2 {
+  color: #FFF;
+}
+
+canvas {
+  width: 100%;
+  height: 600px;
+  border-radius: 5px;
+
+  margin-top: 20px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+footer {
+    color: #DDD;
+    text-align: center;
+    padding: 45px 0px;
+}
+
+/* Icons */
+
+i {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
